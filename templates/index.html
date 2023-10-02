@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SUSTAIN - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets\img\logo-modified.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img class="logo" src="static/assets\img\logo-modified.png" alt=""> 
+          <h1 style="color: #fff;;"><span>&nbsp;</span> SUSTAIN</h1>
+        </a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="#">Home</a></li>
+          <li><a href="{{url_for('form')}}">Evatuate</a></li>
+          <li><a href="{{url_for('grading')}}">Grading</a></li>
+          <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+          <li><a href="{{url_for('register')}}">Join</a></li>
+          <li><a class="active" href="#">{{name}}</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section class="hero-section" id="hero">
+
+    <div class="wave">
+
+      <svg width="100%" height="355px" viewBox="0 0 1920 355" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
+            <path d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,757 L1017.15166,757 L0,757 L0,439.134243 Z" id="Path"></path>
+          </g>
+        </g>
+      </svg>
+
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 hero-text-image">
+          <div class="row">
+            <div class="col-lg-8 text-center text-lg-start">
+              <h1 data-aos="fade-right">Assessing Your Property's Self-Sustainability ?</h1>
+              <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Find everything you need to know about self-sustainability for buildings.</p>
+              <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="#" class="btn btn-outline-white">Explore</a></p>
+            </div>
+            <div class="col-lg-4 iphone-wrap">
+              <img style="height: 300px;" src="static\assets\img\imggg.png" alt="Image" width="500px" data-aos="fade-right">
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Home Section ======= -->
+    <section class="section" id="Features">
+      <div class="container">
+
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8" data-aos="fade-up">
+            <h2 class="section-heading">Building a Sustainable Future Through</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+                <i class="bi-battery-charging"></i>
+              </div>
+              <h3 class="mb-3">Energy Efficiency</h3>
+              <p>Energy efficiency is not just about saving money, it's about protecting the environment and creating a more sustainable future for all</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+                <i class="bi-heart-fill"></i>
+              </div>
+              <h3 class="mb-3">Reduce Carbon Footprint</h3>
+              <p>The greatest threat to our planet is the belief that someone else will save it. Each of us must do our part to create a sustainable future .</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+                <i class="bi-house-fill"></i>
+              </div>
+              <h3 class="mb-3">Sustainability Grading</h3>
+              <p>Sustainability grading is more than just a scorecard. It's a roadmap for building a better, more resilient future for our planet.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+                <i class="bi-droplet"></i>
+              </div>
+              <h3 class="mb-6">Water Conservation</h3>
+              <p>Water is the driving force of all nature, and conserving it is not only an individual responsibility, but a global imperative for a sustainable future.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+                <i class="bi-trash"></i>
+              </div>
+              <h3 class="mb-6">Waste Reduction</h3>
+              <p>Small acts of waste reduction can lead to big impacts on the environment, creating a more sustainable future for us all.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 1px; padding-bottom: 0px;">
+
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5" data-aos="fade">
+          <div >
+            <img style="width: 400px;" class="col-md-4 col-lg-3" src="static/assets\img\house.jfif" alt="Image" class="img-fluid">
+            <img style="width: 400px;" class="col-md-4 col-lg-3" src="static/assets\img\house.jfif" alt="Image" class="img-fluid">
+            <img style="width: 400px;" class="col-md-4 col-lg-3" src="static/assets\img\house.jfif" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="step">
+              <span class="number">01</span>
+              <h3>Eco-Evaluation</h3>
+              <p>The Key to Self-Sustainability</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+              <span class="number">02</span>
+              <h3>Sustainable Solutions</h3>
+              <p>Expert Advice for Self-Building Project.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+              <span class="number">03</span>
+              <h3>Smart Spending</h3>
+              <p>The Key to Effective Cost Utilization</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-6 me-auto step">
+            <h2 class="mb-4">What do we do?</h2>
+            <p class="mb-4">Explore our website to learn how to create self-sustaining buildings that operate independently of external resources, while minimizing their carbon footprint. <br> </p>
+            <p>Our grading system helps you identify the most self-sustainable buildings, taking into account renewable energy, waste management, water conservation, and other critical factors. <br><br></p>
+            <p class="mb-4"><a href="#explore" class="btn btn-primary">Explore </a></p>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <img src="static/assets\img\blueprinthouse.jfif" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-7 mb-5">
+            <h2 class="section-heading" id="explore">Want a Green Home?</h2>
+            <p>Our website grades buildings based on sustainability factors, allowing users to evaluate the eco-friendliness of their dream house.</p>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="pricing h-100 text-center">
+              <span>&nbsp;</span>
+              <h3>Upcoming Building</h3>
+              <!-- <ul class="list-unstyled">
+                <li>Create up to 5 forms</li>
+                <li>Generate 100 monthly reports</li>
+              </ul> -->
+              <div class="price-cta">
+                
+                <p><a href="{{url_for('form')}}" class="btn btn-white">Explore</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="pricing h-100 text-center popular">
+              <span class="popularity">&nbsp;</span>
+              <h3>Grading Standards</h3>
+              <!-- <ul class="list-unstyled">
+                <li>Create up to 20 forms</li>
+                <li>Generate 2500 monthly reports</li>
+                <li>Manage a team of up to 5 people</li>
+              </ul> -->
+              <div class="price-cta">
+                
+                <p><a href="{{url_for('grading')}}" class="btn btn-white">Explore</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="pricing h-100 text-center">
+              <span class="popularity">&nbsp;</span>
+              <h3>Constructed Building</h3>
+              <!-- <ul class="list-unstyled">
+                <li>Create up to 20 forms</li>
+                <li>Generate 2500 monthly reports</li>
+                <li>Manage a team of up to 5 people</li>
+              </ul> -->
+              <div class="price-cta">
+                
+                <p><a href="{{url_for('form')}}" class="btn btn-white">Explore</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#Features">Features</a></li>
+      <li class="menu__item"><a class="menu__link" href="#explore">Grading</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+
+    </ul>
+    <p>&copy;2023 32-bit | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <a href="#" style="color: #2d71a1; background-color: #2d71a1;" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-circle-fill"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

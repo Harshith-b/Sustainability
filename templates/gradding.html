@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Grade</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+<style>
+
+ol{
+    text-align: left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <div class="logo">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <!-- Uncomment the line below if you also wish to use an image logo -->
+              <img class="logo" src="static/assets\img\logo-modified.png" alt=""> 
+              <h1 style="color: #fff;;"><span>&nbsp;</span> SUSTAIN</h1>
+            </a>
+          </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="" href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('form')}} ">Evaluate</a></li>
+            <li><a class="active" href="#">Grading</a></li>         
+            <li><a  href="{{url_for('contact')}}">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Blog Section ======= -->
+    <div class="display1">
+    <section class="hero-section inner-page">
+      <div class="wave">
+
+        <svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
+              <path d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z" id="Path"></path>
+            </g>
+          </g>
+        </svg>
+
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="col-md-7 text-center hero-text">
+                <h1 data-aos="fade-up" data-aos-delay="">Grade Home</h1>
+                <p class="mb-5" data-aos="fade-up" data-aos-delay="100">Standardised grading of sustainable home through transparent criteria.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+    <div class="row" style="padding-left: 30px; padding-right: 30px;">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body" style="text-align: center; ">
+            <h5 class="card-title">Constructed Building</h5><br>
+            <p class="card-text">Criteria</p>
+            <hr>
+            <p>
+              <ul style="list-style-type: none;">
+                <li class="hell"><strong>Energy Efficiency (20 points)</strong></li><br>
+                <ol>
+                  <li>
+                    Are energy-efficient lighting fixtures and appliances installed in your home?
+                  </li>
+                  <li>
+                    Is your home well-insulated to reduce energy consumption?
+                  </li>
+                  <li>
+                    Are there any available option of energy source from renewable energy resources in your home(Roof Top Solar Plant or Bio Gas Plant)?
+                  </li><br>
+                </ol>
+                <li class="hell">
+                  <strong>Water Conservation (15 points)</strong>
+                </li><br>
+                <ol>
+                  <li>
+                    Are low-flow fixtures and fittings installed to reduce water usage?
+                  </li>
+                  <li>
+                    Do you have a rainwater harvesting system in place to conserve water?
+                  </li>
+                  <li>
+                    Are there any other water conservation strategies employed in your home?
+                  </li><br>
+                </ol>
+                <li class="hell">
+                  <strong>Waste Management (10 points)</strong>
+                </li><br>
+                <ol>
+                  <li>
+                    Are there any recycling or composting programs in place?
+are there any options of utilizing waste for energy generation(Bio Gas Plant)?
+                  </li>
+                  <li>
+                    Are there any measures in place to reduce waste and promote sustainability in your home?
+                  </li><br>
+                </ol>
+                <li class="hell">
+                  <strong>Indoor Environment Quality (15 points)</strong>
+                </li><br>
+                <ol>
+                  <li>
+                    Are low-emission materials used to reduce air pollution indoors?
+                  </li>
+                  <li>
+                    Is your home well-ventilated to promote good indoor air quality?
+                  </li>
+                  <li>
+                    Is there a program in place to ensure the regular maintenance and cleaning of heating, ventilation, and air conditioning systems?
+                  </li><br>
+                </ol>
+                <li class="hell">
+                  <strong>Materials (15 points)</strong>
+                </li><br>
+                <ol>
+                  <li>
+                    Were sustainable materials used in the construction of your home?
+                  </li>
+                  <li>
+                    Were materials sourced locally to reduce transportation emissions?
+                  </li>
+                  <li>
+                    Were recycled or reused materials used to reduce waste and environmental impact?
+                  </li>
+                  <li>
+                    Are there any plans in place to replace any non-sustainable building materials with more sustainable options?
+                  </li><br>
+                </ol>
+                <li class="hell">
+                  <strong>Transportation (15 points)</strong>
+                </li><br>
+                <ol>
+                  <li>
+                    Do you use biking or walking as transportation options?
+                  </li>
+                  <li>
+                    Do you use carpooling or ride-sharing programs for transportation?
+                  </li>
+                  <li>
+                    Is there public transportation readily accessible from your home?
+                  </li><br>
+                </ol>
+                <li class="hell">
+                  <strong>Innovation (10 points)</strong>
+                </li><br>
+                <ol>
+                  <li>
+                    Are there any innovative strategies employed to promote sustainability in your home?
+                  </li>
+                  <li>
+                    Are there any new technologies or materials being used to reduce environmental impact?
+                  </li>
+                  <li>
+                    Are there any unique or creative solutions employed to overcome challenges related to building sustainability?
+                  </li>
+                </ol>
+              </ul>
+            </p>
+            <br><hr><br>
+            <p>Consider all aspects of sustainability, including energy efficiency, water conservation, waste management, and indoor air quality.
+              Use a standardized framework or rating system to ensure consistency and objectivity in the grading process.</p><br><br>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Under construction building</h5><br>
+            <p class="card-text">Criteria</p>
+            <hr>
+            <ul style="text-decoration-color: black; list-style-type: none;">
+              <li class="hell">
+                <strong>Site Selection (10 points)</strong>
+              </li><br>
+              <ol>
+                <li>
+                  Did the site selected for your building construction caused harm to the existing environment?
+                </li>
+                <li>
+                  Was the site evaluated for its impact on the environment and local community?
+                </li>
+                <li>
+                  Was the site selected to minimize environmental impact and promote sustainability?
+                </li><br>
+              </ol>
+              <li class="hell">
+                <strong>Planning and Design (20 points)</strong>
+              </li><br>
+              <ol>
+                <li>
+                  Was the building designed to promote sustainability and reduce environmental impact?
+                </li>
+                <li>
+                  Was the building designed to optimize the use of natural light and ventilation?
+                </li>
+                <li>
+                  Were passive solar design strategies employed to reduce energy consumption?
+                </li><br>
+              </ol>
+              <li class="hell">
+                <strong>Water Conservation (10 points)</strong>
+              </li><br>
+              <ol>
+                <li>
+                  What measures were taken to reduce water consumption in your building?
+                </li>
+                <li>
+                  Were low-flow fixtures and fittings installed to reduce water usage?
+                </li>
+                <li>
+                  Were rainwater harvesting and greywater recycling systems installed to conserve water?
+                </li><br>
+              </ol>
+              <li class="hell">
+                <strong>Materials (10 points)</strong>
+              </li>
+              <ol>
+                <li>
+                  Were sustainable materials used in the construction of your building?
+                </li>
+                <li>
+                  Were materials sourced locally to reduce transportation emissions?
+                </li>
+                <li>
+                  Were recycled or reused materials used to reduce waste and environmental impact?
+                </li><br>
+              </ol>
+              <li class="hell">
+                <strong>Indoor Environment Quality (15 points)</strong>
+              </li><br>
+              <ol>
+                <li>
+                  Were low-emission materials used to reduce air pollution indoors?
+                </li>
+                <li>
+                  Were thermal comfort and acoustics taken into consideration during the building design process?
+                </li><br>
+              </ol>
+              <li class="hell">
+                <strong>Energy Efficiency (20 points)</strong>
+              </li><br>
+              <ol>
+                <li>
+                  Were energy-efficient appliances and equipment installed?
+                </li>
+                <li>
+                  Were energy-efficient building materials and insulation used to reduce energy consumption?
+                </li><br>
+              </ol>
+              <li class="hell">
+                <strong>Renewable Energy (5 points)</strong>
+              </li><br>
+              <ol>
+                <li>
+                  Was renewable energy incorporated into your building's design?
+                </li>
+                <li>
+                  Were solar panels or other forms of renewable energy installed to generate electricity?
+                </li>
+                <li>
+                  Was the building designed to make use of natural light and reduce the need for artificial lighting?
+                </li><br>
+              </ol>
+              <li class="hell">
+                <strong>Waste Management (10 points)</strong>
+              </li><br>
+              <ol>
+                <li>
+                  How was waste management addressed during the construction of your building?
+                </li>
+                <li>
+                  Were measures taken to reduce construction waste and recycle materials?
+                </li>
+                <li>
+                  Were waste disposal systems installed to handle waste generated by building occupants?
+                </li><br>
+              </ol>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    </div>
+
+<br><br>
+  </main><!-- End #main -->
+ <!-- ======= Footer ======= -->
+ <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#Features">Features</a></li>
+      <li class="menu__item"><a class="menu__link" href="#explore">Grading</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+
+    </ul>
+    <p>&copy;2023 32-bit | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <a href="#" style="color: #2d71a1; background-color: #2d71a1;" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-circle-fill"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

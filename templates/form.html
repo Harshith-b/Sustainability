@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Evaluate form</title>
+	<link href="static/assets/img/favicon.png" rel="icon">
+	<link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+	<!-- Vendor CSS Files -->
+	<link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+	<!-- Template Main CSS File -->
+	<link href="static/assets/css/style.css" rel="stylesheet">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="static/assets/css/formstyle.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="static/assets/css/stylef.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+	<header id="header" class="fixed-top d-flex ">
+		<div class="container d-flex justify-content-center " style="float:right">
+	
+		  <div class="logo">
+		
+			<!-- Uncomment below if you prefer to use an image logo -->
+			<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+		  </div>
+	
+		  <nav id="navbar" class="navbar">
+			<ul>
+			  <li><a class="active " href="{{url_for('index')}}">Home</a></li>
+			  <li><a href="{{url_for('form')}}">Evaluate</a></li>
+			  <li><a href="{{url_for('grading')}}">grading</a></li>
+			  <li><a href="{{url_for('contact')}}">contact</a></li>
+			
+		
+			  
+			</ul>
+			<i class="bi bi-list mobile-nav-toggle"></i>
+		  </nav><!-- .navbar -->
+	
+		</div>
+	  </header>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-md-push-5">
+						<div class="booking-cta">
+							<h1>EVATUALE YOUR BUILDING SUSTAINABILITY GRADING</h1>
+							<p>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-pull-7">
+						<div class="booking-form">
+							<form action="input" method="post">
+								<div class="form-group">
+									<span class="form-label">Area of the house</span>
+									<input class="form-control" type="number" min="100" placeholder="Area in square meters .sq" name="area">
+								</div>
+								
+	
+								<div class="form-group">
+									<span class="form-label">No. of floors</span>
+									<input class="form-control" type="number" min="1" placeholder="" name="numhouse">
+								</div>
+								<div class="form-group">
+									<span class="form-label">Total Electricity Bill of the Building</span>
+									<input class="form-control" type="number" min="85" name="totalbill" placeholder="Monthly electricity Bill in .Rs">
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label">No. of Rooms</span>
+											<input class="form-control" type="number"  min="0" placeholder="" name="numrooms">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label">No. of People</span>
+											<input class="form-control" type="number" min="1" placeholder="" name="numpeople">
+										</div>
+									</div>
+									
+								</div>
+								<div class="form-btn">
+									<button class="submit-btn">Evaluate</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
